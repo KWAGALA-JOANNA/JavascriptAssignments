@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Create a form with a numeric input and validate if the input value is not a number. Display the error 
+        message below the input box in red color. 
+ -->
+ <p>Please input a number</p>
+
+ <input id="number"><br><br>
+ 
+ <button type="button" onclick="myFunction()">Submit</button>
+ 
+ <p id="demo"></p>
+ 
+ <script>
+ function myFunction() {
+   // Get the value of the input field with id="numb"
+   let x = document.getElementById("number").value;
+   // If x is Not a Number or less than one or greater than 10
+   let text;
+   if (isNaN(x) ) {
+     text = "Invalid input";
+   } else {
+     text = "Thanks!";
+   }
+   document.getElementById("demo").innerHTML = text;
+ }
+ </script>
+ 
+</body>
+</html>
